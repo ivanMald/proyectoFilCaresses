@@ -216,12 +216,6 @@ color: rgb(81, 60, 67);
 .segundaSec{
     margin-bottom: 30px;
 }
-.tituloImg{
-    display: flex;
-    justify-content: center;
-}
-
-
 .loqueHimg{
     width: 100%;
     margin: 0px auto ;
@@ -289,17 +283,57 @@ color: rgb(81, 60, 67);
 }
 
 .imgSize{
-    border-radius: 30px;
+    border-radius: 10px;
     width: 300px;
 }
-.imgSize:hover{
-    transform: scale(1.1) ;
-    transition: all 0.5s ;
+
+.loqueHimg, .divProduct1, .divProduct2, .divProduct3, .divProduct4, .divProduct5, .divProduct6{
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    background: rgba(255, 255, 255, 0.584);
+    border-radius: 10px;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: .5s ease;
 }
 .tituloImg{
-    font-size: 25px;
     font-family: 'Manrope', sans-serif;
-    color: burlywood;
+    position: absolute;
+    font-size: 25px;
+    color:#000;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+.divProduct1:hover .overlay{
+    height: 98.5%;
+    cursor: pointer;
+}
+.divProduct2:hover .overlay{
+    height: 98.5%;
+    cursor: pointer;
+}
+.divProduct3:hover .overlay{
+    height: 98.5%;
+    cursor: pointer;
+}
+.divProduct4:hover .overlay{
+    height: 98.5%;
+    cursor: pointer;
+}
+.divProduct5:hover .overlay{
+    height: 98.5%;
+    cursor: pointer;
+}
+.divProduct6:hover .overlay{
+    height: 98.5%;
+    cursor: pointer;
 }
 .btn3{
     display: flex;
