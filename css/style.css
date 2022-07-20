@@ -444,7 +444,6 @@ margin-bottom: 20px;
     flex-direction: row;
     align-items: center ;
 }
-
 .contenidoMi2{
     display: flex;
     flex-direction: row-reverse;
@@ -458,7 +457,25 @@ margin-bottom: 20px;
         width: auto;
     }
 }
-
+@media (max-width: 768px){
+    .seccionMi p{
+        font-size: 20px;
+    }
+    .seccionMi img{
+        height: 300px;
+        margin: 0px;
+    }
+}
+@media (max-width: 556px){
+    .seccionMi p{
+        font-size: 15px;
+    }
+    .seccionMi img{
+        height: 250px;
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+}
 .loQuehago{
     margin-top: 30px;
 }
@@ -644,3 +661,4 @@ input{
     background:#78788c;
     color:#fff
 }
+
