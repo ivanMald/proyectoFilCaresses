@@ -367,6 +367,13 @@ li{
     font-size: 20px;
     border: black solid 2px
 }
+.tituloAcordion{
+    text-align: center;
+    font-family: 'Megrim', sans-serif;
+    font-size: 6.5vh;
+    color:#E7AB79;
+}
+
 /*footer*/
     footer{
     top: 30px;
@@ -466,7 +473,7 @@ margin-bottom: 20px;
         margin: 0px;
     }
 }
-@media (max-width: 556px){
+@media (max-width: 576px){
     .seccionMi p{
         font-size: 15px;
     }
@@ -585,80 +592,47 @@ margin-bottom: 20px;
 }
 .tituloComo{
     font-size: 40px;
-    position: relative; 
+    text-decoration: underline;
     color: #E7AB79;
     top: 100px;
     text-align: center;
     font-family: 'Manrope', sans-serif;
-    padding: 1%;
+    padding: 4%;
 }
 .encargues {
     display: flex; 
     flex-direction: column;
-    margin-bottom: 500px;
+    margin-bottom: 100px;
     margin-top: 120px;
     gap: 30px;
 }
 .comoText{
-    font-size: 20px;
     color: #E7AB79;
     font-size: 25px;
     line-height: 1.5;
     font-family: 'Manrope', sans-serif;
     text-align: center;
 }
-.contacto h1{
-    padding: 100px;
-    color: #E7AB79;
-    top: 100px;
-}
-.form{
-    width:340px;
-    height:380px;
-    background:#e6e6e6;
-    border-radius:8px;
-    box-shadow:0 0 40px -10px #000;
-    margin:calc(50vh - 220px) auto;
-    padding:20px 30px;
-    max-width:calc(100vw - 40px);
-    box-sizing:border-box;
-    font-family:'Montserrat',sans-serif;
-    position:relative}
-input{
-    width:100%;
-    padding:10px;
-    box-sizing:
-    border-box;
-    background:none;
-    outline:none;
-    resize:none;
-    border:0;
-    font-family:'Montserrat',sans-serif;
-    transition:all .3s;
-    border-bottom:2px solid #bebed2}
-    input:focus{
-        border-bottom:2px solid #78788c
+@media (max-width:992px){
+    .comoText p{
+        font-size: 20px;
     }
-.estilosForm:before{
-    content:attr(type);
-    display:block;
-    margin:28px 0 0;
-    font-size:14px;
-    color:#5a5a5a
+    .tituloComo{
+        font-size: 30px;
+    }
 }
-.botonContacto{
-    float:right;
-    padding:8px 12px;
-    margin:8px 0 0;
-    font-family:'Montserrat',sans-serif;
-    order:2px solid #78788c;
-    background:0;
-    color:#5a5a6e;
-    cursor:pointer;
-    transition:all .3s
-}
-.botonContacto:hover{
-    background:#78788c;
-    color:#fff
+@media (max-width:576px){
+    .comoText p{
+        font-size: 15px;
+    }
+    .tituloComo{
+        font-size: 25px;
+    }
 }
 
+.marginForm{
+    margin-top: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 150px;
+}
