@@ -93,9 +93,10 @@ nav ul{
     font-family: 'Manrope', sans-serif;
     width: max-content;
 }
-/*.navItemslink:hover {
-    background-color: #774360;
-}*/
+
+.navItemslink:hover {
+    color: #E7AB79;
+}
 li{
     list-style: none;
     color: #E7AB79;
