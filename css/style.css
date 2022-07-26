@@ -121,8 +121,8 @@ li{
 .primeraSec{
     padding: 15%;
     margin-top: 120px;
-    background-image: url(../img/back4.jpg);
-    background-size: 100%;
+    background-image: url(../img/backgro2.jpg);
+    background-size: 100%
 }
 
 .botonPosition{
@@ -132,11 +132,12 @@ li{
     gap: 50px;
 }
 .primeraSec h1{
-    
+    margin-top: 55px;
+    font-size: 35px;
     text-align: center;
     font-family: 'Megrim', sans-serif;
     font-size: 6.5vh;
-    color: rgb(81, 60, 67);
+    color: #4C3A51;
 }
 .botonUno{
     margin-bottom: 12px;
@@ -148,9 +149,9 @@ li{
     font-family: 'Manrope', sans-serif;
     border: black solid 2px
 }
-    /* resumen de seccion sobre mi*/
+
     .tituloUno {
-    margin-top: 20px;
+        margin-top: 30px;
     padding: 1%;
     font-family: 'Manrope', sans-serif;
     color: burlywood;
@@ -163,6 +164,7 @@ li{
     align-items: center;
     padding: 5px;
 }
+
 @media (max-width:768px){
     .resumenUno{
         flex-direction: column-reverse;
@@ -215,26 +217,24 @@ li{
 .botonDos{
     border-radius: 20px;
     margin-top: 50px ;
-    background-color:#E7AB79 ;
-    color:#4C3A51;
+    background-color: #E7AB79;
+    color: #4C3A51 ;
     padding: 0.2rem 1rem;
     font-family: 'Manrope', sans-serif;
     font-size: 20px;
     border: black solid 2px
 }
 .segundaSec h1{
+    font-size: 35px;
     margin-bottom: 35px;
-    background-color: #774360;
     padding: 1%;
     font-family: 'Manrope', sans-serif;
-    color: burlywood;
+    color:  #E7AB79;
     text-align: center;
-    background-color:#4C3A51;
+    background-color: #4C3A51;
 }
 
-.segundaSec{
-    margin-bottom: 30px;
-}
+
 .loqueHimg{
     width: 100%;
     margin: 0px auto ;
@@ -359,21 +359,17 @@ li{
     justify-content: center;
 }
 .botonTres{
+    margin-bottom: 50px;
     margin-top: 50px;
     border-radius: 20px;
     background-color:#E7AB79 ;
-    color:#4C3A51;
+    color:  #4C3A51;
     padding: 0.2rem 1rem;
     font-family: 'Manrope', sans-serif;
     font-size: 20px;
     border: black solid 2px
 }
-.tituloAcordion{
-    text-align: center;
-    font-family: 'Megrim', sans-serif;
-    font-size: 6.5vh;
-    color:#E7AB79;
-}
+
 
 /*footer*/
     footer{
@@ -410,10 +406,10 @@ margin-bottom: 20px;
 }
 @media (max-width:576px){
     h2{
-        font-size: 20px;
+        font-size: 18px;
     }
     .infoFooter p{
-        font-size: 20px;
+        font-size: 15px;
     }
 }
 .seccionMi{
@@ -614,6 +610,77 @@ margin-bottom: 20px;
     font-family: 'Manrope', sans-serif;
     text-align: center;
 }
+.tarjetasFlex{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 100vh;
+}
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+.card{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+}
+.card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+.card .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card .front h5 {
+    font-family: 'Manrope', sans-serif;;
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0,0,0,.4);
+    text-align: center;
+}
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: #4C3A51;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+.card .back h5{
+    font-family: 'Manrope', sans-serif;
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+.card .back p{
+    font-family: 'Manrope', sans-serif;
+    letter-spacing: 1px;
+}
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
 @media (max-width:992px){
     .comoText p{
         font-size: 20px;
