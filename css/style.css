@@ -704,3 +704,12 @@ margin-bottom: 20px;
     margin-right: 50px;
     margin-bottom: 150px;
 }
+
+.secGaleria h2{
+    margin-top: 55px;
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Megrim', sans-serif;
+    font-size: 6.5vh;
+    color: #E7AB79;
+}
