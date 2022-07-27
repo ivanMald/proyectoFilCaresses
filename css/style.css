@@ -643,7 +643,7 @@ margin-bottom: 20px;
     object-fit: cover;
 }
 .card .front h5 {
-    font-family: 'Manrope', sans-serif;;
+    font-family: 'Manrope', sans-serif;
     font-size: 20px;
     position: absolute;
     bottom: 0;
@@ -698,12 +698,8 @@ margin-bottom: 20px;
     }
 }
 
-.marginForm{
-    margin-top: 150px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 150px;
-}
+
+
 
 .secGaleria h2{
     margin-top: 55px;
@@ -713,3 +709,4 @@ margin-bottom: 20px;
     font-size: 6.5vh;
     color: #E7AB79;
 }
+
