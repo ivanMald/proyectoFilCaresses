@@ -8,116 +8,7 @@
 body{
     background-color: #774360;
 }
-.navBar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-header{
-    height: 100px;
-    background-color: rgb(81, 60, 67) ;
-    position: fixed; top: 0;
-    width: 100%;  
-    z-index: 10;
-    margin-bottom: 100px;
-}
-.estiloLis{
-    display: flex;
-    margin-right: 40px;
-}
-.logo4{
-    width: 90px;
-    margin-left: 20px;
-}
-.logo{
-display: flex;
-align-items: center;
-justify-content: space-between;
-}
-.naVtoggle{
-color: white;
-background: none;
-border: none;
-font-size: 30px;
-padding: 0 20px;
-line-height: 60px;
 
-display: none;
-}
-nav ul{
-    position:sticky; 
-    background-color: rgb(81, 60, 67)
-}
-@media (max-width: 768px){
-    .navBar{
-        justify-content: flex-start;
-    }
-    header{
-        height: 80px;
-    }
-    .logo4{
-        width: 60px;
-    }
-    .estiloLis {
-        flex-direction: column;
-        align-items: center;
-        margin-right: 20px;
-        background-color: rgb(81, 60, 67);
-        position: fixed;
-        left: 0;
-        top: 60px;
-        width: 100%;
-        padding: 20px 0;
-
-        /*height: calc(100% - 60px);
-        overflow-y: auto;*/
-
-        left: 100%;
-        transition: left 0.3s;
-    }
-    .naVtoggle{
-        display: block;
-        margin-left: auto;
-    }
-    .estiloLis_visible {
-        left: 0;
-        transition: left 0.3s;
-    }
-}
-.navItemslink{
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 50px;
-    padding: 15px 10px;
-    color: #E7AB79;
-    font-family: 'Manrope', sans-serif;
-    width: max-content;
-}
-
-.navItemslink:hover {
-    color: #E7AB79;
-}
-li{
-    list-style: none;
-    color: #E7AB79;
-}
-.navBar ul li{
-    position: relative;
-    margin: 0 10px;
-}
-.navBar ul li::before{
-    content: "";
-    height: 3px;
-    width: 0;
-    background-color:  #E7AB79;
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    transition: 0.4s ease-out;
-}
-.navBar ul li:hover::before{
-    width: 100%;
-}
 .primeraSec{
     padding: 15%;
     margin-top: 120px;
@@ -164,11 +55,20 @@ li{
     align-items: center;
     padding: 5px;
 }
+@media (max-width:992px) {
+    .resumenUno{
+        flex-direction: column;
+    }
+    .imgPosition .clauImg{
+        margin-top: 50px;
+        width: 400px;
+    }
+    p.parRa{
+        font-size: 22.5px;
+    }
+}
 
 @media (max-width:768px){
-    .resumenUno{
-        flex-direction: column-reverse;
-    }
     p.parRa  {
         font-size: 20px;
     }
@@ -203,7 +103,7 @@ li{
     margin-top: 50px;
 }
 .clauImg{
-    width: 115%;
+    width: 500px;
     margin: 5px;
     border-radius: 5px;
 }

@@ -1,0 +1,159 @@
+.cuidar {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+.cuidar .flexCuidar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cuidar .flexCuidar h2 {
+  font-size: 5vh;
+  font-family: "Megrim", sans-serif;
+  color: #E7AB79;
+  margin-bottom: 40px;
+  margin-left: 10px;
+}
+.cuidar .flexCuidar p {
+  text-shadow: rgb(255, 4, 167) 1px 0 10px;
+  font-weight: bolder;
+  font-size: 28px;
+  font-family: "Megrim", sans-serif;
+  color: #E7AB79;
+  margin-top: 40px;
+  margin-left: 10px;
+}
+.cuidar .flexCuidar ol {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: 10px;
+}
+.cuidar .flexCuidar ol li {
+  font-size: 20px;
+  font-family: "Manrope", sans-serif;
+  color: #E7AB79;
+}
+
+header {
+  height: 100px;
+  background-color: rgb(81, 60, 67);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 768px) {
+  header {
+    height: 80px;
+  }
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .navBar {
+    justify-content: flex-start;
+  }
+}
+.navBar .estiloLis {
+  display: flex;
+  margin-right: 40px;
+}
+@media screen and (max-width: 768px) {
+  .navBar .estiloLis {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    background-color: rgb(81, 60, 67);
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    padding: 20px 0;
+    /*height: calc(100% - 60px);
+    overflow-y: auto;*/
+    left: 100%;
+    transition: left 0.3s;
+  }
+}
+.navBar .logo4 {
+  width: 90px;
+  margin-left: 20px;
+}
+@media screen and (max-width: 768px) {
+  .navBar .logo4 {
+    width: 60px;
+  }
+}
+.navBar .logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navBar .naVtoggle {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .navBar .naVtoggle {
+    display: block;
+    margin-left: auto;
+  }
+}
+.navBar .navItemslink {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 50px;
+  padding: 15px 10px;
+  color: #E7AB79;
+  font-family: "Manrope", sans-serif;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.navBar .navItemslink:hover {
+  color: #E7AB79;
+}
+.navBar li {
+  list-style: none;
+  color: #E7AB79;
+}
+.navBar ul li {
+  position: relative;
+  margin: 0 10px;
+}
+.navBar ul li::before {
+  content: "";
+  height: 3px;
+  width: 0;
+  background-color: #E7AB79;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.4s ease-out;
+}
+.navBar ul li:hover::before {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .estiloLis_visible {
+    left: 0;
+    transition: left 0.3s;
+  }
+}
+nav ul {
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: rgb(81, 60, 67);
+}/*# sourceMappingURL=style.css.map */
