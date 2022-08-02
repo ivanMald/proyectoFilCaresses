@@ -40,6 +40,12 @@ header{
             transition: left 0.3s;
         }
     }
+    @include breakNav{
+        .estiloLis_visible {
+            left: 0;
+            transition: left 0.3s;
+        }
+    }
     & .logo4{
         width: 90px;
         margin-left: 20px;
@@ -104,12 +110,7 @@ header{
     }
 
 }
-@include breakNav{
-    .estiloLis_visible {
-        left: 0;
-        transition: left 0.3s;
-    }
-}
+
 
 nav ul{
     position:sticky; 

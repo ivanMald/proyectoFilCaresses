@@ -81,6 +81,12 @@ header {
     transition: left 0.3s;
   }
 }
+@media screen and (max-width: 768px) {
+  .navBar .estiloLis_visible {
+    left: 0;
+    transition: left 0.3s;
+  }
+}
 .navBar .logo4 {
   width: 90px;
   margin-left: 20px;
@@ -146,14 +152,269 @@ header {
   width: 100%;
 }
 
-@media screen and (max-width: 768px) {
-  .estiloLis_visible {
-    left: 0;
-    transition: left 0.3s;
-  }
-}
 nav ul {
   position: -webkit-sticky;
   position: sticky;
   background-color: rgb(81, 60, 67);
+}
+
+.primeraSec {
+  padding: 15%;
+  margin-top: 120px;
+  background-image: url(../img/backgro2.jpg);
+  background-size: 100%;
+}
+.primeraSec h1 {
+  margin-top: 55px;
+  font-size: 35px;
+  text-align: center;
+  font-family: "Megrim", sans-serif;
+  font-size: 6.5vh;
+  color: #4C3A51;
+}
+.primeraSec .botonPosition {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.primeraSec .botonUno {
+  margin-bottom: 12px;
+  font-size: 25px;
+  border-radius: 20px;
+  background-color: rgb(81, 60, 67);
+  color: #E7AB79;
+  padding: 0.2rem 1rem;
+  font-family: "Manrope", sans-serif;
+  border: black solid 2px;
+}
+@media screen and (max-width: 576px) {
+  .primeraSec .botonUno {
+    font-size: 15px;
+  }
+}
+
+.tituloUno {
+  margin-top: 30px;
+  padding: 1%;
+  font-family: "Manrope", sans-serif;
+  color: burlywood;
+  text-align: center;
+  background-color: #4C3A51;
+}
+@media screen and (max-width: 576px) {
+  .tituloUno {
+    font-size: 20px;
+  }
+}
+
+.resumenUno {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px;
+}
+@media screen and (max-width: 992px) {
+  .resumenUno {
+    flex-direction: column;
+  }
+}
+.resumenUno .parRa {
+  font-size: 25px;
+  line-height: 1.5;
+  font-family: "Manrope", sans-serif;
+  color: burlywood;
+  text-align: center;
+  margin-top: 50px;
+}
+@media screen and (max-width: 992px) {
+  .resumenUno .parRa {
+    font-size: 22.5px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .resumenUno .parRa {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .resumenUno .parRa {
+    font-size: 15px;
+  }
+}
+.resumenUno .clauImg {
+  width: 500px;
+  margin: 5px;
+  border-radius: 5px;
+}
+@media screen and (max-width: 992px) {
+  .resumenUno .clauImg {
+    margin-top: 50px;
+    width: 400px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .resumenUno .clauImg {
+    display: none;
+  }
+}
+.resumenUno .positonPa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+}
+.resumenUno .botonDos {
+  border-radius: 20px;
+  margin-top: 50px;
+  background-color: #E7AB79;
+  color: #4C3A51;
+  padding: 0.2rem 1rem;
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  border: black solid 2px;
+}
+@media screen and (max-width: 576px) {
+  .resumenUno .botonDos {
+    font-size: 15px;
+  }
+}
+
+.segundaSec h1 {
+  font-size: 35px;
+  margin-bottom: 35px;
+  padding: 1%;
+  font-family: "Manrope", sans-serif;
+  color: #E7AB79;
+  text-align: center;
+  background-color: #4C3A51;
+}
+@media screen and (max-width: 576px) {
+  .segundaSec h1 {
+    font-size: 20px;
+  }
+}
+.segundaSec .imgSize {
+  border-radius: 10px;
+  width: 300px;
+}
+.segundaSec .btn3 {
+  display: flex;
+  justify-content: center;
+}
+.segundaSec .btn3 .botonTres {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  border-radius: 20px;
+  background-color: #E7AB79;
+  color: #4C3A51;
+  padding: 0.2rem 1rem;
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  border: black solid 2px;
+}
+@media screen and (max-width: 576px) {
+  .segundaSec .btn3 .botonTres {
+    font-size: 15px;
+  }
+}
+.segundaSec .loqueHimg {
+  position: relative;
+  width: 100%;
+  margin: 0px auto;
+  display: grid;
+  grid-gap: 20px;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "divProduct1 divProduct2 divProduct3" "divProduct4 divProduct5 divProduct6";
+}
+.segundaSec .loqueHimg .divProduct1 {
+  grid-area: divProduct1;
+  position: relative;
+}
+.segundaSec .loqueHimg .divProduct2 {
+  grid-area: divProduct2;
+  position: relative;
+}
+.segundaSec .loqueHimg .divProduct3 {
+  grid-area: divProduct3;
+  position: relative;
+}
+.segundaSec .loqueHimg .divProduct4 {
+  grid-area: divProduct4;
+  position: relative;
+}
+.segundaSec .loqueHimg .divProduct5 {
+  grid-area: divProduct5;
+  position: relative;
+}
+.segundaSec .loqueHimg .divProduct6 {
+  grid-area: divProduct6;
+  position: relative;
+}
+@media screen and (max-width: 992px) {
+  .segundaSec .loqueHimg {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "divProduct1 divProduct2" "divProduct3 divProduct4" "divProduct5 divProduct6";
+  }
+}
+@media screen and (max-width: 768px) {
+  .segundaSec .loqueHimg {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "divProduct1" "divProduct2" "divProduct3" "divProduct4" "divProduct5" "divProduct6";
+  }
+}
+@media screen and (max-width: 576px) {
+  .segundaSec .loqueHimg img {
+    height: auto;
+    width: 200px;
+  }
+}
+.segundaSec .loqueHimg .overlay {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  background: rgba(255, 255, 255, 0.584);
+  border-radius: 10px;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+.segundaSec .loqueHimg .tituloImg {
+  font-family: "Manrope", sans-serif;
+  position: absolute;
+  font-size: 25px;
+  color: #000;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+.segundaSec .loqueHimg .divProduct1:hover .overlay {
+  height: 98.5%;
+  cursor: pointer;
+}
+.segundaSec .loqueHimg .divProduct2:hover .overlay {
+  height: 98.5%;
+  cursor: pointer;
+}
+.segundaSec .loqueHimg .divProduct3:hover .overlay {
+  height: 98.5%;
+  cursor: pointer;
+}
+.segundaSec .loqueHimg .divProduct4:hover .overlay {
+  height: 98.5%;
+  cursor: pointer;
+}
+.segundaSec .loqueHimg .divProduct5:hover .overlay {
+  height: 98.5%;
+  cursor: pointer;
+}
+.segundaSec .loqueHimg .divProduct6:hover .overlay {
+  height: 98.5%;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

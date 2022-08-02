@@ -4,5 +4,16 @@
     }
 }
 
+@mixin mobile{
+    @media screen and (max-width: 576px){
+        @content;
+    }
+}
 
+
+@mixin breakNueve{
+    @media screen and (max-width: 992px){
+        @content;
+    }
+}
 
