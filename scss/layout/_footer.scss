@@ -1,0 +1,41 @@
+footer{
+    top: 30px;
+    background-color: #4C3A51 ;
+    padding: 20px;
+    & h2{
+        color: #E7AB79;
+    text-align:center;
+    font-family: 'Manrope', sans-serif;
+    @include mobile{
+        font-size: 18px;
+    }
+    }
+    & .icons{
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+        justify-content: center;
+        justify-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        img{
+            width: 40px;
+    margin-left: 10px;
+        }
+    }  
+    & .infoFooter{
+        display: grid;
+        justify-items: center;
+        gap: 20px;
+        margin-bottom: 20px;
+
+        p{
+            color: #E7AB79;
+            font-family: 'Manrope', sans-serif;
+            @include mobile{
+                font-size: 15px;
+            }
+        }
+    }
+
+}
