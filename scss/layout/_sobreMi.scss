@@ -1,0 +1,60 @@
+.seccionMi{
+    margin-top: 50px;
+
+    & h1, h3{
+    font-size: 30px;
+    position: relative; 
+    color: $colorfuente;
+    top: 100px;
+    text-align: center;
+    background-color: $colortitulos;
+    font-family: 'Manrope', sans-serif;
+    padding: 1%;
+    margin-bottom: 130px;
+    }
+    & p {
+    color: $colorfuente;
+    font-size: 25px;
+    line-height: 1.5;
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+    width: 100%;
+    margin: 50px;
+    @include breakNav{
+        font-size: 20px;
+    }
+    @include mobile{
+        font-size: 15px;
+    }
+    }
+    & img{
+        height: 400px;
+        border-radius: 200px;
+        margin: 100px;
+        @include breakNav{
+            height: 300px;
+            margin: 0px;
+        }
+        @include mobile{
+            height: 250px;
+            margin: 0px;
+            margin-bottom: 10px;
+        }
+    }
+    & .contenidoMi{
+    display: flex;
+    flex-direction: row;
+    align-items: center ;
+    @include breakNueve{
+        flex-direction: column;
+    }
+    }
+    & .contenidoMi2{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center ;
+    @include breakNueve{
+        flex-direction: column;
+    }
+    }
+}

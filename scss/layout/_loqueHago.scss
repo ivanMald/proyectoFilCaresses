@@ -1,0 +1,86 @@
+.loQuehago{
+    margin-top: 30px;
+    & p {
+        color: $colorfuente;
+    font-size: 25px;
+    line-height: 1.5;
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+    margin: 20px;
+    @include breakNueve{
+        font-size: 20px;
+    }
+    @include breakNav{
+        font-size: 15px;
+    }
+    }
+    & h1{
+        font-size: 40px;
+    position: relative; 
+    color: $colorfuente;
+    top: 100px;
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    padding: 1%;
+    margin-bottom: 120px;
+    }
+    & h2{
+        color: $colorfuente;
+    text-align: center;
+    background-color: $colortitulos;
+    font-family: 'Manrope', sans-serif;
+    padding: 1%;
+    font-size: 20px;
+    }
+    & .loquehagoImagenes {
+        width: 300px;
+        border-radius: 20px;
+        margin-bottom: 30px;
+        @include breakNav{
+            width: 200px;
+        }
+    }
+    & .loquehagoX{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    & .fontP p{
+        text-shadow: rgb(255, 4, 167) 1px 0 10px;
+        font-weight: bolder;
+        font-size: 28px;
+        font-family: 'Megrim', sans-serif;
+    }
+    & .imgDiv1{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        @include breakNueve{
+            flex-direction: column;
+        }
+    }
+    & .imgDiv2{
+        @extend .imgDiv1
+    }
+    & .imgDiv3{
+        @extend .imgDiv1
+    }
+    & .amigurumi{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    & .maquina{
+        display: flex;
+        justify-content: center;
+    }
+    & .dosAgu{
+        display: flex;
+        justify-content: center;
+    }
+}
