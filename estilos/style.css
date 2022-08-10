@@ -9,15 +9,18 @@
   align-items: center;
 }
 .cuidar .flexCuidar h2 {
+  max-width: 950px;
   text-align: center;
   font-size: 5vh;
   font-family: "Megrim", sans-serif;
   color: #E7AB79;
   margin-bottom: 40px;
+  margin-top: 40px;
   margin-left: 10px;
 }
 .cuidar .flexCuidar p {
   text-align: center;
+  max-width: 950px;
   text-shadow: rgb(255, 4, 167) 1px 0 10px;
   font-weight: bolder;
   font-size: 28px;
@@ -33,11 +36,17 @@
   margin-left: 10px;
 }
 .cuidar .flexCuidar ol li {
-  text-align: center;
+  max-width: 950px;
   font-size: 20px;
   font-family: "Manrope", sans-serif;
   color: #E7AB79;
   list-style: none;
+}
+.cuidar .flexCuidar ol li span {
+  font-family: "Megrim", sans-serif;
+  font-weight: bold;
+  text-shadow: rgb(103, 3, 90) 1px 0 10px;
+  font-size: 25px;
 }
 
 header {
@@ -191,12 +200,18 @@ nav ul {
   color: #E7AB79;
   padding: 0.2rem 1rem;
   font-family: "Manrope", sans-serif;
+  font-weight: bold;
   border: black solid 2px;
+  transition: 1s;
 }
 @media screen and (max-width: 576px) {
   .primeraSec .botonUno {
     font-size: 15px;
   }
+}
+.primeraSec .botonUno:hover {
+  background-color: #E7AB79;
+  color: rgb(81, 60, 67);
 }
 
 .tituloUno {
@@ -276,13 +291,19 @@ nav ul {
   color: #4C3A51;
   padding: 0.2rem 1rem;
   font-family: "Manrope", sans-serif;
+  transition: 1s;
   font-size: 20px;
+  font-weight: bold;
   border: black solid 2px;
 }
 @media screen and (max-width: 576px) {
   .resumenUno .botonDos {
     font-size: 15px;
   }
+}
+.resumenUno .botonDos:hover {
+  background-color: rgb(81, 60, 67);
+  color: #E7AB79;
 }
 
 .segundaSec h1 {
@@ -314,14 +335,20 @@ nav ul {
   background-color: #E7AB79;
   color: #4C3A51;
   padding: 0.2rem 1rem;
+  transition: 1s;
   font-family: "Manrope", sans-serif;
   font-size: 20px;
+  font-weight: bold;
   border: black solid 2px;
 }
 @media screen and (max-width: 576px) {
   .segundaSec .btn3 .botonTres {
     font-size: 15px;
   }
+}
+.segundaSec .btn3 .botonTres:hover {
+  background-color: rgb(81, 60, 67);
+  color: #E7AB79;
 }
 .segundaSec .loqueHimg {
   position: relative;
@@ -532,6 +559,7 @@ footer .infoFooter p {
   margin-top: 30px;
 }
 .loQuehago p {
+  max-width: 950px;
   color: #E7AB79;
   font-size: 25px;
   line-height: 1.5;
@@ -619,6 +647,7 @@ footer .infoFooter p {
 
 .encargues {
   display: flex;
+  align-items: center;
   flex-direction: column;
   margin-bottom: 100px;
   margin-top: 120px;
@@ -644,6 +673,7 @@ footer .infoFooter p {
   }
 }
 .encargues .comoText {
+  max-width: 950px;
   color: #E7AB79;
   font-size: 25px;
   line-height: 1.5;

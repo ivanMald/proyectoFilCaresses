@@ -28,10 +28,16 @@
         color: $colorfuente;
         padding: 0.2rem 1rem;
         font-family: 'Manrope', sans-serif;
+        font-weight: bold;
         border: black solid 2px;
+        transition: 1s;
         @include mobile{
             font-size: 15px;
         }
+    }
+    & .botonUno:hover{
+        background-color: $colorfuente ;
+        color: $colorfondo1;
     }
     
 }
@@ -101,11 +107,17 @@
         color: $colortitulos ;
         padding: 0.2rem 1rem;
         font-family: 'Manrope', sans-serif;
+        transition: 1s;
         font-size: 20px;
+        font-weight: bold;
         border: black solid 2px;
         @include mobile{
             font-size: 15px;
         }
+    }
+    & .botonDos:hover{
+        background-color: $colorfondo1;
+        color: $colorfuente;
     }
 }
 
@@ -139,12 +151,18 @@
             background-color:$colorfuente ;
             color:  $colortitulos;
             padding: 0.2rem 1rem;
+            transition: 1s;
             font-family: 'Manrope', sans-serif;
             font-size: 20px;
+            font-weight: bold;
             border: black solid 2px;
             @include mobile{
                 font-size: 15px;
             }
+        }
+        & .botonTres:hover{
+        background-color: $colorfondo1;
+        color: $colorfuente;
         }
     }
     

@@ -6,15 +6,18 @@
         flex-direction: column;
         align-items: center;
         h2{
+            max-width: 950px;
             text-align: center;
             font-size: 5vh;
             font-family: 'Megrim', sans-serif;
             color:$colorfuente;
             margin-bottom: 40px;
+            margin-top: 40px;
             margin-left: 10px;
         }
         p{
             text-align: center;
+            max-width: 950px;
             text-shadow: rgb(255, 4, 167) 1px 0 10px;
             font-weight: bolder;
             font-size: 28px;
@@ -29,11 +32,18 @@
             gap: 20px;
             margin-left: 10px;
             li{
-                text-align: center;
+                max-width: 950px;
                 font-size: 20px;
                 font-family: 'Manrope', sans-serif;
                 color: $colorfuente;
                 list-style: none;
+
+                span{
+                    font-family: 'Megrim', sans-serif;
+                    font-weight: bold;
+                    text-shadow: rgb(103, 3, 90) 1px 0 10px;
+                    font-size: 25px;
+                }
             }
         }
     }
