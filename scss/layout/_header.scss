@@ -51,6 +51,7 @@ header{
         margin-left: 20px;
         @include breakNav{
             width: 60px;
+            margin-top: 10px;
         }
     }
     & .logo{

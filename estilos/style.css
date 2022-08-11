@@ -108,6 +108,7 @@ header {
 @media screen and (max-width: 768px) {
   .navBar .logo4 {
     width: 60px;
+    margin-top: 10px;
   }
 }
 .navBar .logo {
@@ -555,6 +556,12 @@ footer .infoFooter p {
     flex-direction: column;
   }
 }
+.seccionMi span {
+  text-shadow: rgb(255, 4, 167) 1px 0 10px;
+  font-family: "Megrim", sans-serif;
+  font-weight: bolder;
+}
+
 .loQuehago {
   margin-top: 30px;
 }

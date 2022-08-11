@@ -52,4 +52,9 @@
     & .contenidoMi2{
     @extend .contenidoMi
     }
+    span{
+        text-shadow: rgb(255, 4, 167) 1px 0 10px;
+        font-family: 'Megrim', sans-serif;
+        font-weight: bolder;
+    }
 }
