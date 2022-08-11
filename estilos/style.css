@@ -494,6 +494,12 @@ footer .infoFooter p {
     font-size: 15px;
   }
 }
+footer .marca {
+  font-family: "Manrope", sans-serif;
+  top: 20px;
+  position: relative;
+  text-align: center;
+}
 
 .seccionMi {
   margin-top: 50px;

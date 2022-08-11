@@ -30,12 +30,18 @@ footer{
         margin-bottom: 20px;
 
         p{
-            color: #E7AB79;
+            color: $colorfuente;
             font-family: 'Manrope', sans-serif;
             @include mobile{
                 font-size: 15px;
             }
         }
     }
-
+    & .marca {
+        font-family: 'Manrope', sans-serif;
+        
+        top: 20px;
+        position: relative;
+        text-align: center;
+    }
 }
