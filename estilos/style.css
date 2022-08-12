@@ -108,7 +108,6 @@ header {
 @media screen and (max-width: 768px) {
   .navBar .logo4 {
     width: 60px;
-    margin-top: 10px;
   }
 }
 .navBar .logo {
