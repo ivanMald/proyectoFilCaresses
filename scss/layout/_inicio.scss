@@ -29,7 +29,8 @@
         padding: 0.2rem 1rem;
         font-family: 'Manrope', sans-serif;
         font-weight: bold;
-        border: black solid 2px;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        border: $colorfondo1 ;
         transition: 1s;
         @include mobile{
             font-size: 15px;
@@ -108,9 +109,12 @@
         padding: 0.2rem 1rem;
         font-family: 'Manrope', sans-serif;
         transition: 1s;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
         font-size: 20px;
         font-weight: bold;
-        border: black solid 2px;
+        border: $colorfuente;
+
+        
         @include mobile{
             font-size: 15px;
         }
@@ -155,7 +159,8 @@
             font-family: 'Manrope', sans-serif;
             font-size: 20px;
             font-weight: bold;
-            border: black solid 2px;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+            border: $colorfuente;
             @include mobile{
                 font-size: 15px;
             }

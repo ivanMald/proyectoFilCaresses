@@ -14,6 +14,7 @@
             margin-bottom: 40px;
             margin-top: 40px;
             margin-left: 10px;
+            margin-right: 10px;
         }
         p{
             text-align: center;
@@ -30,7 +31,7 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
-            margin-left: 10px;
+            margin-right: 15px;
             li{
                 max-width: 950px;
                 font-size: 20px;
@@ -47,4 +48,14 @@
             }
         }
     }
+}
+
+.carruselPositon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
 }

@@ -103,7 +103,7 @@
         color: #f3f3f3;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        gap: 10px;
         text-align: center;
         box-shadow: 0 5px 10px #000;
     }
@@ -114,8 +114,9 @@
         letter-spacing: 2px;
     }
     & .card .back p{
+        padding: 10px;
         font-family: 'Manrope', sans-serif;
-        letter-spacing: 1px;
+        text-align: left;
     }
     & .card:hover .front{
         transform: perspective(600px) rotateY(180deg);

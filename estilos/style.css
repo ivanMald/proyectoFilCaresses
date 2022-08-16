@@ -17,6 +17,7 @@
   margin-bottom: 40px;
   margin-top: 40px;
   margin-left: 10px;
+  margin-right: 10px;
 }
 .cuidar .flexCuidar p {
   text-align: center;
@@ -33,7 +34,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin-left: 10px;
+  margin-right: 15px;
 }
 .cuidar .flexCuidar ol li {
   max-width: 950px;
@@ -47,6 +48,16 @@
   font-weight: bold;
   text-shadow: rgb(103, 3, 90) 1px 0 10px;
   font-size: 25px;
+}
+
+.carruselPositon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
 }
 
 header {
@@ -201,7 +212,8 @@ nav ul {
   padding: 0.2rem 1rem;
   font-family: "Manrope", sans-serif;
   font-weight: bold;
-  border: black solid 2px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border: rgb(81, 60, 67);
   transition: 1s;
 }
 @media screen and (max-width: 576px) {
@@ -292,9 +304,10 @@ nav ul {
   padding: 0.2rem 1rem;
   font-family: "Manrope", sans-serif;
   transition: 1s;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   font-size: 20px;
   font-weight: bold;
-  border: black solid 2px;
+  border: #E7AB79;
 }
 @media screen and (max-width: 576px) {
   .resumenUno .botonDos {
@@ -339,7 +352,8 @@ nav ul {
   font-family: "Manrope", sans-serif;
   font-size: 20px;
   font-weight: bold;
-  border: black solid 2px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border: #E7AB79;
 }
 @media screen and (max-width: 576px) {
   .segundaSec .btn3 .botonTres {
@@ -775,7 +789,7 @@ footer .marca {
   color: #f3f3f3;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 10px;
   text-align: center;
   box-shadow: 0 5px 10px #000;
 }
@@ -786,8 +800,9 @@ footer .marca {
   letter-spacing: 2px;
 }
 .tarjetasFlex .card .back p {
+  padding: 10px;
   font-family: "Manrope", sans-serif;
-  letter-spacing: 1px;
+  text-align: left;
 }
 .tarjetasFlex .card:hover .front {
   transform: perspective(600px) rotateY(180deg);
